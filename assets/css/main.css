@@ -1,0 +1,27 @@
+/* Variables */
+:root {
+  /* sizing */
+  --size-sm: 25%;
+  --size-med: 50%;
+  --size-lrg: 75%;
+  --size-full: 100%;
+}
+
+/* Elements */
+
+/* Classes */
+.d-b {
+  display: block;
+}
+
+.ta-c {
+  text-align: center;
+}
+
+.width-25 {
+  width: var(--size-sm);
+}
+
+.width-75 {
+  width: var(--size-lrg);
+}
