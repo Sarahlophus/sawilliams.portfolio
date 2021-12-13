@@ -8,6 +8,9 @@
 }
 
 /* Elements */
+body {
+  background-image: url("/assets/img/geo-background.png");
+}
 
 /* Classes */
 .d-b {
