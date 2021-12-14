@@ -5,26 +5,90 @@
   --size-med: 50%;
   --size-lrg: 75%;
   --size-full: 100%;
+  --size-xl: 150%;
+
+  /* colors */
+  --eggplant: #805987;
+  --powder: #e6f7ff;
+  --stone: #4d4f43;
+  --white: white;
 }
 
 /* Elements */
 body {
-  background-image: url("/assets/img/geo-background.png");
+  background-image: url("/Users/purrzerker/code/sawilliams.portfolio/assets/img/geoBackground10.png");
+  display: flex;
+  flex-direction: column;
+  font-family: "Raleway", sans-serif;
+  height: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+}
+
+h1 {
+  font-size: 200%;
+}
+
+h2 {
+  font-size: 150%;
+}
+
+nav a {
+  color: var(--stone);
+  font-size: 125%;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 400px;
 }
 
 /* Classes */
-.d-b {
-  display: block;
-}
-
-.ta-c {
-  text-align: center;
-}
-
-.width-25 {
+.accentImg {
   width: var(--size-sm);
 }
 
-.width-75 {
+.heroImg {
   width: var(--size-lrg);
 }
+
+.logo {
+  background-color: var(--eggplant);
+  border: 2px solid var(--eggplant);
+  border-radius: 5px;
+  font-size: 150%;
+  padding: 1rem;
+}
+
+.logo a {
+  color: var(--white);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.navBar {
+  align-items: center;
+  border-bottom: 5px double var(--stone);
+  border-left: 5px double var(--stone);
+  border-right: none;
+  border-top: none;
+  border-radius: 5px;
+  color: var(--stone);
+
+  padding: 1rem;
+}
+
+.navBar a:link:hover {
+  color: var(--eggplant);
+  text-shadow: 0px 0px 15px var(--eggplant), 0px 0px 10px var(--powder);
+}
+
+/* media queries */
