@@ -23,6 +23,13 @@ body {
   height: 100%;
 }
 
+footer {
+  background-color: var(--eggplant);
+  color: var(--white);
+  font-size: 150%;
+  text-align: center;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -52,12 +59,31 @@ nav ul {
 }
 
 /* Classes */
-.accentImg {
-  width: var(--size-sm);
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.aboutBox {
+  background-color: var(--powder);
+  border-radius: 15px;
+  margin: 1rem 1rem 3rem 3rem;
+  padding: 1.5rem;
+}
+
+.boxes {
+  background-color: var(--powder);
+  border-radius: 15px;
+  margin: 1.5rem;
+  padding: 1.5rem;
 }
 
 .heroImg {
-  width: var(--size-lrg);
+  width: var(--size-full);
+  padding: 1.5rem;
 }
 
 .logo {
@@ -74,21 +100,38 @@ nav ul {
   text-decoration: none;
 }
 
+.myRep {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.5rem;
+  text-align: center;
+}
+
 .navBar {
   align-items: center;
-  border-bottom: 5px double var(--stone);
-  border-left: 5px double var(--stone);
+  border-bottom: 5px double var(--eggplant);
+  border-left: 5px double var(--eggplant);
   border-right: none;
   border-top: none;
   border-radius: 5px;
   color: var(--stone);
-
   padding: 1rem;
 }
 
 .navBar a:link:hover {
   color: var(--eggplant);
   text-shadow: 0px 0px 15px var(--eggplant), 0px 0px 10px var(--powder);
+}
+
+.myRep img {
+  width: var(--size-lrg);
+  padding: 1.5rem;
+}
+
+.pageIntro {
+  text-align: center;
+  padding: 1.5rem;
 }
 
 /* media queries */
