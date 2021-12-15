@@ -60,10 +60,10 @@ nav ul {
 
 /* Classes */
 .aboutMe {
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   padding: 1.5rem;
 }
 
@@ -82,8 +82,8 @@ nav ul {
 }
 
 .heroImg {
-  width: var(--size-full);
   padding: 1.5rem;
+  width: var(--size-full);
 }
 
 .logo {
@@ -98,6 +98,10 @@ nav ul {
   color: var(--white);
   font-weight: 700;
   text-decoration: none;
+}
+
+.logo:hover {
+  box-shadow: 0px 0px 15px var(--eggplant);
 }
 
 .myRep {
@@ -121,7 +125,7 @@ nav ul {
 
 .navBar a:link:hover {
   color: var(--eggplant);
-  text-shadow: 0px 0px 15px var(--eggplant), 0px 0px 10px var(--powder);
+  text-shadow: 0px 0px 20px var(--eggplant);
 }
 
 .myRep img {
@@ -129,9 +133,29 @@ nav ul {
   padding: 1.5rem;
 }
 
+.myRep img:hover {
+  filter: drop-shadow(0px 0px 20px var(--eggplant));
+}
+
 .pageIntro {
-  text-align: center;
   padding: 1.5rem;
+  text-align: center;
 }
 
 /* media queries */
+@media (max-width: 576px) {
+  header {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .heroImg {
+    padding: 0;
+    margin: 0;
+  }
+
+  .myRep {
+    flex-direction: column;
+    width: 100%;
+  }
+}
