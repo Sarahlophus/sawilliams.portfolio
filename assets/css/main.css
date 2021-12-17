@@ -16,7 +16,8 @@
 
 /* Elements */
 body {
-  background-image: url("/Users/purrzerker/code/sawilliams.portfolio/assets/img/geoBackground10.png");
+  background-image: url("./../img/geoBackground15.png");
+  color: var(--stone);
   display: flex;
   flex-direction: column;
   font-family: "Raleway", sans-serif;
@@ -39,6 +40,7 @@ header {
 
 h1 {
   font-size: 200%;
+  color: var(--eggplant);
 }
 
 h2 {
