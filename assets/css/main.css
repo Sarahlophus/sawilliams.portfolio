@@ -16,7 +16,7 @@
 
 /* Elements */
 body {
-  background-image: url("./../img/geoBackground15.png");
+  background-image: url("./../img/geoBackground10.png");
   color: var(--stone);
   display: flex;
   flex-direction: column;
@@ -33,9 +33,7 @@ footer {
 
 header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1%;
+  justify-content: flex-end;
 }
 
 h1 {
@@ -47,20 +45,107 @@ h2 {
   font-size: 150%;
 }
 
-nav a {
+p {
+  font-size: 115%;
+  font-weight: 540;
+  padding: 0.5rem;
+}
+
+/* Classes (from top to bottom)*/
+
+/* SAW logo */
+.logo {
+  background-color: var(--eggplant);
+  border: 2px solid var(--eggplant);
+  border-radius: 5px;
+  font-size: 150%;
+  padding: 1rem;
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+}
+
+.logo a {
+  color: var(--white);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.logo:hover {
+  box-shadow: 0px 0px 15px var(--eggplant);
+}
+
+/* Navigation */
+.navBar {
+  align-items: center;
+  color: var(--stone);
+  flex-direction: row;
+  justify-content: flex-end;
+
+  padding: 1rem;
+}
+
+.navBar a {
   color: var(--stone);
   font-size: 125%;
   font-weight: 700;
   text-decoration: none;
 }
 
-nav ul {
-  display: flex;
-  justify-content: space-between;
-  min-width: 400px;
+.navBar a:link:hover {
+  color: var(--eggplant);
+  text-shadow: 0px 0px 20px var(--eggplant);
 }
 
-/* Classes */
+.navBar ul {
+  border-bottom: 5px double var(--eggplant);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  min-width: 25rem;
+  padding: 1rem;
+}
+
+/* Page introduction and banner image */
+.heroImg {
+  padding: 1.5rem;
+  width: var(--size-full);
+}
+
+.pageIntro {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.pageIntro h1 {
+  padding-bottom: 1rem;
+}
+
+/* Talent boxes and content */
+.detailBoxes {
+  background-color: var(--powder);
+  border-radius: 15px;
+  margin: 1.5rem;
+  padding: 1.5rem;
+}
+
+.myTalents {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.myTalents img {
+  width: var(--size-lrg);
+  padding: 1.5rem;
+}
+
+.myTalents img:hover {
+  filter: drop-shadow(0px 0px 20px var(--eggplant));
+}
+
 .aboutMe {
   align-items: center;
   display: flex;
@@ -76,74 +161,6 @@ nav ul {
   padding: 1.5rem;
 }
 
-.boxes {
-  background-color: var(--powder);
-  border-radius: 15px;
-  margin: 1.5rem;
-  padding: 1.5rem;
-}
-
-.heroImg {
-  padding: 1.5rem;
-  width: var(--size-full);
-}
-
-.logo {
-  background-color: var(--eggplant);
-  border: 2px solid var(--eggplant);
-  border-radius: 5px;
-  font-size: 150%;
-  padding: 1rem;
-}
-
-.logo a {
-  color: var(--white);
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.logo:hover {
-  box-shadow: 0px 0px 15px var(--eggplant);
-}
-
-.myRep {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 1.5rem;
-  text-align: center;
-}
-
-.navBar {
-  align-items: center;
-  border-bottom: 5px double var(--eggplant);
-  border-left: 5px double var(--eggplant);
-  border-right: none;
-  border-top: none;
-  border-radius: 5px;
-  color: var(--stone);
-  padding: 1rem;
-}
-
-.navBar a:link:hover {
-  color: var(--eggplant);
-  text-shadow: 0px 0px 20px var(--eggplant);
-}
-
-.myRep img {
-  width: var(--size-lrg);
-  padding: 1.5rem;
-}
-
-.myRep img:hover {
-  filter: drop-shadow(0px 0px 20px var(--eggplant));
-}
-
-.pageIntro {
-  padding: 1.5rem;
-  text-align: center;
-}
-
 /* media queries */
 @media (max-width: 576px) {
   header {
@@ -152,11 +169,24 @@ nav ul {
   }
 
   .heroImg {
-    padding: 0;
+    padding-top: 0.5;
     margin: 0;
   }
 
-  .myRep {
+  .navBar {
+    margin-top: 4rem;
+    padding: 0;
+  }
+
+  .navBar ul {
+    min-width: 22rem;
+  }
+
+  .pageIntro h1 {
+    font-size: 175%;
+  }
+
+  .myTalents {
     flex-direction: column;
     width: 100%;
   }
