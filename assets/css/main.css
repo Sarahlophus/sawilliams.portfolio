@@ -24,13 +24,6 @@ body {
   height: 100%;
 }
 
-footer {
-  background-color: var(--eggplant);
-  color: var(--white);
-  font-size: 150%;
-  text-align: center;
-}
-
 header {
   display: flex;
   justify-content: flex-end;
@@ -121,15 +114,16 @@ p {
   padding-bottom: 1rem;
 }
 
-/* Talent boxes and content */
+/* Skills boxes and content */
 .detailBoxes {
   background-color: var(--powder);
   border-radius: 15px;
+  display: relative;
   margin: 1.5rem;
   padding: 1.5rem;
 }
 
-.myTalents {
+.mySkills {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -137,31 +131,47 @@ p {
   text-align: center;
 }
 
-.myTalents img {
+.mySkills img {
   width: var(--size-lrg);
   padding: 1.5rem;
 }
 
-.myTalents img:hover {
+.mySkills a:hover {
   filter: drop-shadow(0px 0px 20px var(--eggplant));
 }
 
-.aboutMe {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 1.5rem;
+/* Footer */
+.fancyFooter {
+  background-color: var(--eggplant);
+  color: var(--white);
+  font-size: 150%;
+  padding: 1rem;
+  text-align: center;
 }
 
-.aboutBox {
-  background-color: var(--powder);
-  border-radius: 15px;
-  margin: 1rem 1rem 3rem 3rem;
+.fancyFooter a {
+  color: var(--white);
+  font-size: 125%;
+  font-weight: 700;
   padding: 1.5rem;
+  text-decoration: none;
+}
+
+.fancyFooter a:link:hover {
+  text-shadow: 0px 0px 20px var(--powder);
+}
+
+.fancyFooter p {
+  font-size: 1rem;
 }
 
 /* media queries */
+@media (max-width: 992pm) {
+  .fancyFooter a:link:active {
+    text-shadow: 0px 0px 20px var(--powder);
+  }
+}
+
 @media (max-width: 576px) {
   header {
     flex-direction: column;
@@ -180,13 +190,14 @@ p {
 
   .navBar ul {
     min-width: 22rem;
+    flex-direction: column;
   }
 
   .pageIntro h1 {
     font-size: 175%;
   }
 
-  .myTalents {
+  .mySkills {
     flex-direction: column;
     width: 100%;
   }
