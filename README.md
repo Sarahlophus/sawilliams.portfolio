@@ -11,4 +11,11 @@ Sarah Ann Williams' personal portfolio includes:
 - links to my Github and Linkedin at the bottom of the page
 - responsive web layout with semantic html tags
 
-## Image of porfolio page
+## Video of porfolio page
+
+![portfolio demo](./assets/img/Swilliams-portfolio.gif)
+
+## Links to repo and page
+
+- Github repository: https://github.com/Sarahlophus/sawilliams.portfolio
+- Github page: https://sarahlophus.github.io/sawilliams.portfolio/#top
