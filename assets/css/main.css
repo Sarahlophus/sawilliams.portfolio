@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-  /* sizing */
+  /* image sizing */
   --size-sm: 25%;
   --size-med: 50%;
   --size-lrg: 75%;
@@ -114,6 +114,10 @@ p {
   padding-bottom: 1rem;
 }
 
+.pageIntro p {
+  font-size: 1.3rem;
+}
+
 /* Skills boxes and content */
 .detailBoxes {
   background-color: var(--powder);
@@ -138,6 +142,39 @@ p {
 
 .mySkills a:hover {
   filter: drop-shadow(0px 0px 20px var(--eggplant));
+}
+
+.nProj {
+  background-color: var(--powder);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  margin: 2.5rem;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.nProj img {
+  width: var(--size-lrg);
+  padding: 1.5rem;
+}
+
+.nProj a:hover {
+  filter: drop-shadow(0px 0px 20px var(--eggplant));
+}
+
+.nProjCap {
+  background-color: var(--eggplant);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  color: var(--white);
+  font-style: italic;
+  font-weight: 550;
+  font-size: 120%;
+  padding: 1rem;
+  margin: 0;
+  width: 100%;
+  z-index: 50;
 }
 
 /* Footer */
@@ -203,7 +240,7 @@ p {
   }
 
   .pageIntro h1 {
-    font-size: 175%;
+    font-size: 130%;
   }
 
   .mySkills {
