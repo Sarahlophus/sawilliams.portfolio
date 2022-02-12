@@ -12,6 +12,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <!-- Bulma Styling -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <!-- style sheets -->
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/main.css">
@@ -32,14 +34,13 @@ powderblue #E6F7FF - containers
             <ul>
                 <li><a href="#Projects">Projects</a></li>
                 <li><a href="#Art">Art</a></li>
-                <li><a href="#Resume">Resume</a></li>
                 <li><a href="#Contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- main -->
-    <main>
+    <main class="is-transparent">
         <!-- section 1: Page intro and me-banner -->
         <section class="pageIntro">
             <h1>Hello, I'm Sarah Ann Williams</h1>
@@ -51,70 +52,88 @@ powderblue #E6F7FF - containers
                 alt="close up of a woman at a desk with a laptop, looking at the camera with a cat laying on her hand">
         </section>
 
-        <!-- section maybe -->
+        <!-- section 2: spotlight project -->
         <section id="Projects">
-            <div class="nProj">
-                <h2>Spotlight Project</h2>
-                <figure class=" ">
-                    <a href="https://sarahlophus.github.io/hw1b/" target="blank"><img
-                            src="./assets/img/horiseonHero.png" alt="for the love of god work"></a>
-                    <figcaption class="nProjCap ">Horiseon SEO Page</figcaption>
+            <div class="is-transparent nProj">
+                <h2 class="detailHeading">Book Buddy</h2>
+                <p>A simple tool that allows a user to search for a book by genre, and filter their results by page number</p>
+                <figure class="is-transparent ">
+                    <a href="https://highfivers.github.io/project/" target="blank"><img src="./assets/img/Sites/BookBuddy.gif"
+                            alt="a gif showcasing a yellow-themed book search engine, where the 'horror' genre is selected and the first page of results are shown"></a>
+                    <figcaption class="nProjCap ">Spotlight Project: <a class="projLinks" href="https://github.com/highfivers/project">Check it out on
+                            GitHub!</a>
+                    </figcaption>
                 </figure>
 
 
             </div>
 
-
         </section>
 
-        <!-- section 2: list of projects link to webpages -->
-        <section class="mySkills">
-            <div class="detailBoxes">
-                <h2>Other Web Development Projects</h2>
-                <a href="https://sarahlophus.github.io/CSS-Snippets/" target="blank"><img
-                        src="./assets/img/cssSnippetsLink.png"
-                        alt="a circular image with a black background displaying a series of pink boxes in a grid"></a>
+        <!-- section 3: list of projects link to webpages -->
+        <section class="columns m-4">
+            <div class="column is-half detailBoxes">
+                <h2 class="detailHeading">Other Development Projects</h2>
+                <p>Click to visit each site!</p>
+                <a href="https://sarahlophus.github.io/codingquiz.game/" target="blank"><img src="./assets/img/Sites/catQuiz2.png"
+                        alt="an image of a website titled 'Cat Quiz' with a start button and high scores button"></a>
+                <p class="bgc-eggplant c-white mb-5">Cat Trivia Quiz: <a class="projLinks" href="https://github.com/Sarahlophus/codingquiz.game">Check
+                        it out on Github! </a></p>
 
-                <a href="https://sarahlophus.github.io/stu-miniProject1/#top" target="blank"><img
-                        src="./assets/img/MiniProjLink1-2.png"
-                        alt="a pink and brown circular image showcasing a hot pink contact form"></a>
+                <a href="https://sarahlophus.github.io/workday.scheduler/" target="blank"><img src="./assets/img/Sites/dayPlanner2.png"
+                        alt="an image of a website listing with work hours 9am - 6pm"></a>
+                <p class="bgc-eggplant c-white mb-5">Workday Planner: <a class="projLinks"
+                        href="https://github.com/Sarahlophus/workday.scheduler">Check it out on Github!</a></p>
 
+                <a href="https://sarahlophus.github.io/weather.board/" target="blank"><img src="./assets/img/Sites/weatherFriend2.png"
+                        alt="an image of a website with a weather search for Chicago and five-day forecase"></a>
+                <p class="bgc-eggplant c-white mb-5">Weather Friend: <a class="projLinks" href="https://github.com/Sarahlophus/weather.board">Check it
+                        out on Github! </a></p>
 
-                <img src="./assets/img/comingSoon.png"
-                    alt="a pink and brown circular image showcasing a hot pink contact form">
+                <a href="https://sarahlophus.github.io/pw.generator/" target="blank"><img src="./assets/img/Sites/pwGenerator.png"
+                        alt="an image of a website with a button prompting 'generate password'"></a>
+                <p class="bgc-eggplant c-white mb-5">Password Generator: <a class="projLinks" href="https://github.com/Sarahlophus/pw.generator">Check
+                        it out on Github!</a></p>
+
             </div>
 
+            <!-- art -->
+            <div class="column detailBoxes">
+                <h2 id="Art" class="detailHeading">Sample Pet Portraits</h2>
+                <p>Now accepting comissions!</p>
+                <img class="" src="./assets/img/Art/cosmoLink.png" alt="a circular illustration of an orange tabby cat with a galaxy background">
 
-            <div class="detailBoxes">
-                <h2 id="Art">Sample Pet Portraits</h2>
-                <img src="./assets/img/Cococorncobmo-AtaderoLink.png"
-                    alt="a cluttered desk with a teapot on a tray, an open day planner, and a cat laying down">
 
-                <img src="./assets/img/Sabi-GilertsenLink.png"
-                    alt="a cluttered desk with a teapot on a tray, an open day planner, and a cat laying down">
+                <img class="" src="./assets/img/Art/Cococorncobmo-AtaderoLink.png"
+                    alt="a circular illustration of a brown scruffy dog with a galaxy background">
 
-                <img src="./assets/img/cosmoLink.png"
-                    alt="a cluttered desk with a teapot on a tray, an open day planner, and a cat laying down">
+
+                <img class="" src="./assets/img/Art/Sabi-GilertsenLink.png"
+                    alt="a circular illustration of a grey and white winged-unicorn-cat sleeping on a tree branch">
+
+
             </div>
         </section>
 
-        <!-- section 3: resume pdf opens to new tab; contact info links to pages-->
-        <section class="mySkills">
-            <div class="detailBoxes">
-                <h2 id="Resume"> My Resume </h2>
-                <a href="./assets/img/resumeSWilliams2021.pdf" target="blank"><img
-                        src="./assets/img/resumeSWilliams2021Link.png"
-                        alt="a cluttered desk with a teapot on a tray, an open day planner, and a cat laying down"></a>
+        <!-- section 4: resume pdf opens to new tab; contact info links to pages-->
+        <section class="columns">
+            <div class="column detailBoxes is-10 is-mobile is-offset-1">
+                <h2 id="Resume" class="detailHeading"> My Resume </h2>
+                <p>Click for downloadable PDF</p>
+                <a href="./assets/img/resumeSWilliams.pdf" target="blank"><img src="./assets/img/resumeSWilliamsLink.png"
+                        alt="an image of a resume with a dark-green theme"></a>
             </div>
     </main>
 
     <!-- footer -->
-    <footer id="Contact" class="fancyFooter">
+    <footer id="Contact" class="fancyFooter mt-4">
         <h3>Find me on:</h3>
         <a href="https://github.com/Sarahlophus" target="blank">GitHub</a>
         <a href="https://www.linkedin.com/in/sarah-williams-94770614/" target="blank">LinkedIn</a>
         <p>Made with ❤️ by Sarah Ann Williams, 2021</p>
     </footer>
+
+    <script src="./assets/script.js"></script>
 </body>
 
 </html>

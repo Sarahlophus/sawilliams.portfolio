@@ -1,0 +1,30 @@
+/* elements */
+body {
+  background-image: url("./../img/geoBackground10.png");
+  color: var(--stone);
+  display: flex;
+  flex-direction: column;
+  font-family: "Raleway", sans-serif;
+  height: 100%;
+}
+
+/* classes in alpha order */
+.bgc-eggplant {
+  background-color: #805987;
+}
+
+.bgc-powderblue {
+  background-color: #e6f7ff;
+}
+
+.c-eggplant {
+  color: #805987;
+}
+
+.c-white {
+  color: white;
+}
+
+.img-80 {
+  width: 90%;
+}

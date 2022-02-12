@@ -15,8 +15,11 @@
 }
 
 /* Elements */
-body {
+html {
   background-image: url("./../img/geoBackground10.png");
+}
+
+body {
   color: var(--stone);
   display: flex;
   flex-direction: column;
@@ -44,6 +47,18 @@ p {
   padding: 0.5rem;
 }
 
+/* individual attributes */
+.bgc-trans {
+  background-color: transparent;
+}
+
+.bgc-eggplant {
+  background-color: var(--eggplant);
+}
+
+.c-white {
+  color: var(--white);
+}
 /* Classes (from top to bottom)*/
 
 /* SAW logo */
@@ -101,7 +116,6 @@ p {
 
 /* Page introduction and banner image */
 .heroImg {
-  padding: 1.5rem;
   width: var(--size-full);
 }
 
@@ -112,6 +126,7 @@ p {
 
 .pageIntro h1 {
   padding-bottom: 1rem;
+  font-weight: 700;
 }
 
 .pageIntro p {
@@ -122,12 +137,35 @@ p {
 .detailBoxes {
   background-color: var(--powder);
   border-radius: 15px;
-  display: relative;
-  margin: 1.5rem;
-  padding: 1.5rem;
+
+  margin: 1rem;
+  padding: 1rem;
+}
+.detailBoxes a:hover {
+  filter: drop-shadow(0px 0px 20px var(--eggplant));
 }
 
-.mySkills {
+.detailBoxes p {
+  font-style: italic;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.detailHeading {
+  font-weight: 600;
+  text-align: center;
+}
+
+.projLinks {
+  color: white;
+  text-decoration: underline;
+}
+
+.projLinks:hover {
+  text-shadow: 0px 0px 20px var(--powder);
+}
+
+/* .mySkills {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -138,11 +176,7 @@ p {
 .mySkills img {
   width: var(--size-lrg);
   padding: 1.5rem;
-}
-
-.mySkills a:hover {
-  filter: drop-shadow(0px 0px 20px var(--eggplant));
-}
+} */
 
 .nProj {
   background-color: var(--powder);
@@ -156,7 +190,7 @@ p {
 
 .nProj img {
   width: var(--size-lrg);
-  padding: 1.5rem;
+  padding: 0.5rem;
 }
 
 .nProj a:hover {
@@ -175,6 +209,10 @@ p {
   margin: 0;
   width: 100%;
   z-index: 50;
+}
+
+.fancyFooter a:link:hover {
+  text-shadow: 0px 0px 20px var(--powder);
 }
 
 /* Footer */
@@ -219,13 +257,24 @@ p {
 }
 
 @media (max-width: 576px) {
+  h1 {
+    font-size: 130%;
+  }
+
+  h2 {
+    font-size: 115%;
+  }
+
   header {
     flex-direction: column;
     width: 100%;
   }
 
+  p {
+    font-size: 100%;
+  }
+
   .heroImg {
-    padding-top: 0.5;
     margin: 0;
   }
 
@@ -239,8 +288,16 @@ p {
     flex-direction: column;
   }
 
+  .nProj {
+    margin: 1.5rem;
+  }
+
   .pageIntro h1 {
     font-size: 130%;
+  }
+
+  .pageIntro p {
+    font-size: 100%;
   }
 
   .mySkills {
