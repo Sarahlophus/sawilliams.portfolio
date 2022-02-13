@@ -15,6 +15,13 @@ Sarah Ann Williams' personal portfolio includes:
 
 ![portfolio demo](./assets/img/Swilliams-portfolio.gif)
 
+## Technologies and Resources
+
+- Bulma styling
+- CSS
+- Google Fonts
+- HTML
+
 ## Links to repo and page
 
 - Github repository: https://github.com/Sarahlophus/sawilliams.portfolio
