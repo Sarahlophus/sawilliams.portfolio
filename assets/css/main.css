@@ -59,6 +59,10 @@ p {
 .c-white {
   color: var(--white);
 }
+
+.w-lrg {
+  width: var(--size-lrg);
+}
 /* Classes (from top to bottom)*/
 
 /* SAW logo */
@@ -137,7 +141,6 @@ p {
 .detailBoxes {
   background-color: var(--powder);
   border-radius: 15px;
-
   margin: 1rem;
   padding: 1rem;
 }
@@ -211,8 +214,11 @@ p {
   z-index: 50;
 }
 
-.fancyFooter a:link:hover {
-  text-shadow: 0px 0px 20px var(--powder);
+/* resume */
+.resume {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 /* Footer */
@@ -220,15 +226,14 @@ p {
   background-color: var(--eggplant);
   color: var(--white);
   font-size: 150%;
-  padding: 1rem;
-  text-align: center;
+  /* padding: 1rem;
+  text-align: center; */
 }
 
 .fancyFooter a {
   color: var(--white);
   font-size: 125%;
   font-weight: 700;
-  padding: 1.5rem;
   text-decoration: none;
 }
 
@@ -238,6 +243,7 @@ p {
 
 .fancyFooter p {
   font-size: 1rem;
+  color: var(--white);
 }
 
 /* media queries */
@@ -300,8 +306,7 @@ p {
     font-size: 100%;
   }
 
-  .mySkills {
-    flex-direction: column;
-    width: 100%;
+  .fancyFooter {
+    font-size: 100%;
   }
 }
