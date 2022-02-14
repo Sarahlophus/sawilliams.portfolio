@@ -59,10 +59,14 @@ p {
 .c-white {
   color: var(--white);
 }
+.w-med {
+  width: var(--size-med);
+}
 
 .w-lrg {
   width: var(--size-lrg);
 }
+
 /* Classes (from top to bottom)*/
 
 /* SAW logo */
@@ -247,7 +251,11 @@ p {
 }
 
 /* media queries */
-@media (max-width: 992pm) {
+@media (max-width: 992px) {
+  .mq576-w-full {
+    width: var(--size-full);
+  }
+
   .fancyFooter a:link:focus {
     text-shadow: 0px 0px 20px var(--powder);
   }
@@ -278,6 +286,10 @@ p {
 
   p {
     font-size: 100%;
+  }
+
+  .mq576-w-full {
+    width: var(--size-full);
   }
 
   .heroImg {
