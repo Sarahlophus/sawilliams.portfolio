@@ -56,6 +56,10 @@ p {
   background-color: var(--eggplant);
 }
 
+.c-eggplant {
+  color: var(--eggplant);
+}
+
 .c-white {
   color: var(--white);
 }

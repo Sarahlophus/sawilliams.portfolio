@@ -25,4 +25,4 @@ Sarah Ann Williams' personal portfolio includes:
 ## Links to repo and page
 
 - Github repository: https://github.com/Sarahlophus/sawilliams.portfolio
-- Github page: https://sarahlophus.github.io/sawilliams.portfolio/#top
+- Github page: https://sarahlophus.github.io/sawilliams.portfolio/
