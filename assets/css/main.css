@@ -70,6 +70,9 @@ p {
 .w-lrg {
   width: var(--size-lrg);
 }
+.w-xlrg {
+  width: var(--size-xl);
+}
 
 /* Classes (from top to bottom)*/
 
