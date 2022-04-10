@@ -8,12 +8,12 @@ Sarah Ann Williams' personal portfolio includes:
 - my name, a recent photo, and links to web development project, sample art, and downloadable resume
 - a 'Spotlight Project' with a title banner that appears larger than those beneath it
 - images that link to their corresponding deployed project
-- links to my Github and Linkedin at the bottom of the page
+- links to my Github, Linkedin, and email at the bottom of the page
 - responsive web layout with semantic html tags
 
 ## Video of porfolio page
 
-![portfolio demo](./assets/img/Swilliams-portfolio.gif)
+![portfolio demo](./assets/img/sawPortfolio.gif)
 
 ## Technologies and Resources
 
