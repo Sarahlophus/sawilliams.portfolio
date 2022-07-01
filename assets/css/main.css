@@ -1,7 +1,8 @@
 /* Variables */
 :root {
   /* image sizing */
-  --size-sm: 25%;
+  --size-tny: 25%;
+  --size-sm: 38%;
   --size-med: 50%;
   --size-lrg: 75%;
   --size-full: 100%;
@@ -92,6 +93,10 @@ p {
   color: var(--white);
 }
 
+.w-tny {
+  width: var(--size-tny);
+}
+
 .w-med {
   width: var(--size-med);
 }
@@ -99,6 +104,11 @@ p {
 .w-lrg {
   width: var(--size-lrg);
 }
+
+.w-sm {
+  width: var(--size-sm);
+}
+
 .w-xlrg {
   width: var(--size-xl);
 }
@@ -264,11 +274,15 @@ a.hvr-pink:hover {
 
 @media (max-width: 576px) {
   h1 {
-    font-size: 130%;
+    font-size: 200%;
   }
 
   h2 {
-    font-size: 115%;
+    font-size: 170%;
+  }
+
+  h3 {
+    font-size: 140%;
   }
 
   header {
