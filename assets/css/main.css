@@ -8,19 +8,19 @@
   --size-xl: 150%;
 
   /* colors */
-  --eggplant: #805987;
-  --powder: #e6f7ff;
-  --stone: #4d4f43;
-  --white: white;
+  --eggplant: #2a204d;
+  --midnight: #0f023c;
+  --pink: #e980fc;
+  --white: #ffffff;
 }
 
 /* Elements */
 html {
-  background-image: url("./../img/geoBackground10.png");
+  background-color: var(--midnight);
 }
 
 body {
-  color: var(--stone);
+  color: var(--white);
   display: flex;
   flex-direction: column;
   font-family: "Raleway", sans-serif;
@@ -33,11 +33,15 @@ header {
 }
 
 h1 {
-  font-size: 200%;
-  color: var(--eggplant);
+  font-size: 250%;
+  color: var(--white);
 }
 
 h2 {
+  font-size: 200%;
+}
+
+h3 {
   font-size: 150%;
 }
 
@@ -48,6 +52,18 @@ p {
 }
 
 /* individual attributes */
+.bdr-pink {
+  border: 3px solid #e980fc;
+}
+
+.bdr-white {
+  border: 3px solid #ffffff;
+}
+
+.br-15 {
+  border-radius: 15px;
+}
+
 .bgc-trans {
   background-color: transparent;
 }
@@ -56,13 +72,26 @@ p {
   background-color: var(--eggplant);
 }
 
+.bgc-midnight {
+  background-color: var(--midnight);
+}
+
+.bgc-pink {
+  background-color: var(--pink);
+}
+
 .c-eggplant {
   color: var(--eggplant);
+}
+
+.c-pink {
+  color: var(--pink);
 }
 
 .c-white {
   color: var(--white);
 }
+
 .w-med {
   width: var(--size-med);
 }
@@ -76,67 +105,15 @@ p {
 
 /* Classes (from top to bottom)*/
 
-/* SAW logo */
-.logo {
-  background-color: var(--eggplant);
-  border: 2px solid var(--eggplant);
-  border-radius: 5px;
-  font-size: 150%;
-  padding: 1rem;
-  position: fixed;
-  left: 1rem;
-  top: 1rem;
-  z-index: 2;
-}
-
-.logo a {
-  color: var(--white);
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.logo:hover {
-  box-shadow: 0px 0px 15px var(--eggplant);
-}
-
-/* Navigation */
-.navBar {
-  align-items: center;
-  color: var(--stone);
-  flex-direction: row;
-  justify-content: flex-end;
-
-  padding: 1rem;
-}
-
-.navBar a {
-  color: var(--stone);
-  font-size: 125%;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.navBar a:link:hover {
-  color: var(--eggplant);
-  text-shadow: 0px 0px 20px var(--eggplant);
-}
-
-.navBar ul {
-  border-bottom: 5px double var(--eggplant);
-  border-radius: 5px;
-  display: flex;
-  justify-content: space-between;
-  min-width: 25rem;
-  padding: 1rem;
+a.hvr-pink:hover {
+  background-color: transparent;
+  color: var(--pink);
+  text-shadow: 0px 0px 20px var(--pink);
 }
 
 /* Page introduction and banner image */
-.heroImg {
-  width: var(--size-full);
-}
 
 .pageIntro {
-  padding: 1.5rem;
   text-align: center;
 }
 
@@ -305,10 +282,6 @@ p {
 
   .mq576-w-full {
     width: var(--size-full);
-  }
-
-  .heroImg {
-    margin: 0;
   }
 
   .navBar {

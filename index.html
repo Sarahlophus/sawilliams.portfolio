@@ -19,43 +19,77 @@
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 
-<!-- page colors:
-stonegrey #4D4F43 - text
-eggplant #805987 - header/footer
-powderblue #E6F7FF - containers
--->
-
-<body>
+<body has-navbar-fixed-top>
     <!-- header -->
     <header>
         <!-- nav bar with fixed home button that returns to top of page. Nav links to sections on page -->
-        <h2 class="logo"><a href="#top">SAW</a></h2>
-        <nav class="navBar">
-            <ul>
-                <li><a href="#Projects">Projects</a></li>
-                <li><a href="#Art">Art</a></li>
-                <li><a href="#Contact">Contact</a></li>
-                <li><a href="./assets/img/SWilliams-Resume2022.pdf" target="blank">Résumé</a></li>
-            </ul>
+        <nav class="bgc-midnight navbar is-fixed-top " role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+
+                <h1 class="bdr-pink br-15 has-text-weight-bold is-size-4 m-2 navbar-item p-1"><a href="#top" class="c-pink hvr-pink">SAW</a></h1>
+
+                <!-- navbar burger -->
+                <div role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true" class="c-white"></span>
+                    <span aria-hidden="true" class="c-white"></span>
+                    <span aria-hidden="true" class="c-white"></span>
+                </div>
+            </div>
+
+            <!-- navbar items -->
+            <div id="navMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a href="#About" class="c-white has-text-weight-semibold hvr-pink is-size-5 navbar-item">
+                        About
+                    </a>
+
+                    <a href="#Projects" class="c-white has-text-weight-semibold hvr-pink is-size-5 navbar-item">
+                        Projects
+                    </a>
+
+                    <a href="#Experience" class="c-white has-text-weight-semibold hvr-pink is-size-5 navbar-item">
+                        Experience
+                    </a>
+
+                    <a href="#Contact" class="c-white has-text-weight-semibold hvr-pink is-size-5 navbar-item">
+                        Contact
+                    </a>
+
+                    <p className="control">
+                        <a href="./assets/img/SWilliams-Resume2022.pdf"
+                            class="button bgc-pink c-midnight has-text-weight-semiboldis-outlined is-rounded navbar-item">
+                            Resume
+                        </a>
+                    </p>
+                </div>
+            </div>
         </nav>
     </header>
 
     <!-- main -->
     <main class="is-transparent">
         <!-- section 1: Page intro and me-banner -->
-        <section class="pageIntro">
-            <h1>Hello, I'm Sarah Ann Williams</h1>
-            <p>
-                Welcome to my page! I'm a recent graduate from Northwestern University's web development Coding
-                Bootcamp. I have a background in Psychology and informal youth education that boils down to a lifelong love of learning and creating.
-            </p>
-            <p>
-                In addition to building web apps and familiarizing myself with new and fun technologies, I also create pet portraits and write
-                Dungenons & Dragons campaigns.
-            </p>
+        <section class="">
+            <img class="m-0 mt-6" src="./assets/img/bannerSAW.jpg" alt="a long-haired woman sitting among daffodils">
 
-            <img class="heroImg" src="./assets/img/Sarah-laptop.jpeg"
-                alt="close up of a woman at a desk with a laptop, looking at the camera with a cat laying on her hand">
+            <div class="m-6">
+                <h3 class="c-pink ">Welcome to my page! I'm</h3>
+                <h1 class="has-text-weight-semibold mt-2 ">Sarah Ann Williams</h1>
+                <p class="mt-2">
+                    I am a junior Fullstack Web Developer with a background in Psychology and curriculum development that boils down to a lifelong
+                    love of learning and creating.
+                </p>
+                <p class="mt-2">
+                    When I’m not working on my latest project or exploring new and fun technologies, you can typically find me playing videogames,
+                    enjoying the outdoors, or writing Dungenons & Dragons campaigns.
+                </p>
+            </div>
+
+            <div>
+                <a href="https://github.com/Sarahlophus"><img src="./assets/img/Logos/GitHub-Mark-Light-64px.png" alt=""></a>
+            </div>
+
+
         </section>
 
         <!-- section 2: My skillset -->
@@ -188,7 +222,7 @@ powderblue #E6F7FF - containers
             </div>
         </footer>
 
-
+        <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
