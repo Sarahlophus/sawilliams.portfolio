@@ -46,7 +46,8 @@ h3 {
   font-size: 150%;
 }
 
-p {
+p,
+ul {
   font-size: 115%;
   font-weight: 540;
   padding: 0.5rem;
@@ -97,6 +98,14 @@ p {
   height: 100vh;
 }
 
+.pos-rel {
+  position: relative;
+}
+
+.w-full {
+  width: var(--size-full);
+}
+
 .w-tny {
   width: var(--size-tny);
 }
@@ -129,6 +138,25 @@ a.hvr-pink:hover {
   border: none;
   border-top: 4px double var(--pink);
   background-color: var(--midnight);
+}
+
+.overlay {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition: 0.5s ease;
+}
+
+.over-cont:hover .overlay {
+  opacity: 1;
 }
 
 /* Page introduction and banner image */
