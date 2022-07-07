@@ -25,7 +25,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Raleway", sans-serif;
-  height: 100%;
+  line-height: 160%;
 }
 
 header {
@@ -93,6 +93,10 @@ p {
   color: var(--white);
 }
 
+.h-100vh {
+  height: 100vh;
+}
+
 .w-tny {
   width: var(--size-tny);
 }
@@ -119,6 +123,12 @@ a.hvr-pink:hover {
   background-color: transparent;
   color: var(--pink);
   text-shadow: 0px 0px 20px var(--pink);
+}
+
+.accentLine {
+  border: none;
+  border-top: 4px double var(--pink);
+  background-color: var(--midnight);
 }
 
 /* Page introduction and banner image */
@@ -265,11 +275,6 @@ a.hvr-pink:hover {
   .mySkills a:focus {
     filter: drop-shadow(0px 0px 20px var(--eggplant));
   }
-
-  .navBar a:link:focus {
-    color: var(--eggplant);
-    text-shadow: 0px 0px 20px var(--eggplant);
-  }
 }
 
 @media (max-width: 576px) {
@@ -296,16 +301,6 @@ a.hvr-pink:hover {
 
   .mq576-w-full {
     width: var(--size-full);
-  }
-
-  .navBar {
-    margin-top: 4rem;
-    padding: 0;
-  }
-
-  .navBar ul {
-    min-width: 22rem;
-    flex-direction: column;
   }
 
   .nProj {
