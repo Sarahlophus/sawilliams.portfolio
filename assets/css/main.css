@@ -134,6 +134,11 @@ a.hvr-pink:hover {
   text-shadow: 0px 0px 20px var(--pink);
 }
 
+a.shdw-pink:hover {
+  background-color: transparent;
+  filter: drop-shadow(0px 0px 20px var(--pink));
+}
+
 .accentLine {
   border: none;
   border-top: 4px double var(--pink);
@@ -141,9 +146,10 @@ a.hvr-pink:hover {
 }
 
 .overlay {
-  background-color: black;
-  color: white;
+  background-color: var(--pink);
+  color: var(--midnight);
   font-size: 20px;
+  line-height: 3.5vh;
   opacity: 0;
   position: absolute;
   text-align: center;
@@ -156,7 +162,7 @@ a.hvr-pink:hover {
 }
 
 .over-cont:hover .overlay {
-  opacity: 1;
+  opacity: 0.9;
 }
 
 /* Page introduction and banner image */
@@ -291,9 +297,17 @@ a.hvr-pink:hover {
 }
 
 /* media queries */
-@media (max-width: 992px) {
-  .mq576-w-full {
+@media (max-width: 780px) {
+  .mq780-w-full {
     width: var(--size-full);
+  }
+
+  .mq780-w-med {
+    width: var(--size-med);
+  }
+
+  .mq780-w-sm {
+    width: var(--size-sm);
   }
 
   .fancyFooter a:link:focus {
@@ -305,7 +319,7 @@ a.hvr-pink:hover {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 480px) {
   h1 {
     font-size: 200%;
   }
@@ -327,8 +341,12 @@ a.hvr-pink:hover {
     font-size: 100%;
   }
 
-  .mq576-w-full {
+  .mq480-w-full {
     width: var(--size-full);
+  }
+
+  .mq480-w-med {
+    width: var(--size-med);
   }
 
   .nProj {
