@@ -1,26 +1,26 @@
-# 02 Personal Portfolio
+# Personal Portfolio
 
 ## Description
 
 Sarah Ann Williams' personal portfolio includes:
 
-- an internally-referencing navigation bar, as well as an icon that return the user to the top of the screen
-- my name, a recent photo, and links to web development project, sample art, and downloadable resume
-- a 'Spotlight Project' with a title banner that appears larger than those beneath it
-- images that link to their corresponding deployed project
-- links to my Github, Linkedin, and email at the bottom of the page
+- An internally-referencing navigation bar, as well as an icon that return the user to the top of the screen
+- My name, a recent photo, and links to web development projects, and downloadable resume
+- 'Spotlight Projects' section featuring most recently completed projects
+- Links to my Github, Linkedin, and email
 - responsive web layout with semantic html tags
 
 ## Video of porfolio page
 
-![portfolio demo](./assets/img/sawPortfolio.gif)
+![portfolio demo](./assets/img/SarahAnnWilliams.gif)
 
 ## Technologies and Resources
 
-- Bulma styling
-- CSS
-- Google Fonts
 - HTML
+- CSS
+- JavaScript
+- Bulma styling
+- Google Fonts
 
 ## Links to repo and page
 
